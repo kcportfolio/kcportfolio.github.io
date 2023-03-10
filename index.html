@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/KahChun.png" alt="Quah Kah Chun" width="80" style="border-radius:20px;">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Quah Kah Chun </h1>
+          <p class="title">Educator</p>
+          <p class="title">Web developer</p>
+          <p class="title">Content Creator</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:richard@example.com" class="contact-link">quahkahchun99@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+12133522795" class="contact-link">+60 10-2993-198</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul> -->
+
+      </div>
+
+    </aside>
+
+
+    <div class="main-content">
+
+
+
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            As a fresh graduate teacher, I bring a passion for education and a strong set of skills in both teaching and
+            technology. With
+            experience in programming and creating educational technology, I am well-equipped to bring innovation and
+            creativity to the
+            classroom. My goal is to provide a dynamic and engaging learning experience for my students, leveraging my
+            expertise in
+            technology to help them achieve their educational goals. As a dedicated and enthusiastic educator, I am
+            eager to take on new
+            challenges and opportunities to grow as a teacher and make a positive impact on the lives of my students.
+          </p>
+
+          <p>
+
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <script>
+          var services = [{ icon: "./assets/images/teachericon.svg", title: "Teaching", description: "As a Physics and Mathematics teacher, I have the ability to communicate complex concepts to students of varying levels of understanding. I have experience developing lesson plans that encourage active learning, critical thinking and problem-solving." }, { icon: "./assets/images/educationicon.svg", title: "Educational Technology Development", description: "As an educational technology developer, I have extensive experience in designing and developing interactive educational applications that enhance the learning experience. I am skilled in using Python for 3D physics simulations, creating engaging and immersive learning environments." }, { icon: "./assets/images/webicon.svg", title: "Web Development", description: "With my expertise in web development, I can design and develop dynamic websites that are both visually appealing and highly functional. I am proficient in a range of programming languages including HTML, CSS, JavaScript, PHP, and SQL. I am experienced in creating responsive and accessible websites that cater to diverse users' needs." }, { icon: "./assets/images/youtubeicon.svg", title: "Content Creation", description: "With my skills in content creation, I can help organizations communicate complex scientific concepts to the general public. I have experience creating engaging science popularization videos, from needs analysis to publishing/marketing. I am proficient in every stage of the process, including research, script writing, audio production, animation, and video editing." }];
+
+          document.writeln('<section class="service">');
+          document.writeln('  <h3 class="h3 service-title">My Capabilities</h3>');
+          document.writeln('  <ul class="service-list">');
+
+          for (var i = 0; i < services.length; i++) {
+            document.writeln('    <li class="service-item">');
+            document.writeln('      <div class="service-icon-box">');
+            document.writeln('        <img src="' + services[i].icon + '" alt="' + services[i].title + ' icon" width="40">');
+            document.writeln('      </div>');
+            document.writeln('      <div class="service-content-box">');
+            document.writeln('        <h4 class="h4 service-item-title">' + services[i].title + '</h4>');
+            document.writeln('        <p class="service-item-text">' + services[i].description + '</p>');
+            document.writeln('      </div>');
+            document.writeln('    </li>');
+          }
+
+          document.writeln('  </ul>');
+          document.writeln('</section>');
+        </script>
+
+
+
+        <section class="timeline" style="margin-top:50px;">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <script>
+              const data2 = [
+                {
+                  "title": "Sultan Idris Education University, 35900 Tanjong Malim, Perak",
+                  "date": "2019-2023",
+                  "text": "Obtained 3.95/4.0 CGPA for Bachelor of Education (Physics) with Honours."
+                },
+                {
+                  "title": "Melaka Matriculation College, 78300 Masjid Tanah, Melaka",
+                  "date": "2018-2019",
+                  "text": "Obtained 4.0/4.0 CGPA in Peperiksaan Semester Program Matrikulasi (PSPM)."
+                },
+                {
+                  "title": "SMJK Nan Hwa, 32000 Sitiawan, Perak",
+                  "date": "2013-2017",
+                  "text": "Obtained 6A+ 2A 1A- 1B+ in Sijil Pelajaran Malaysia (SPM)."
+                }
+              ];
+
+              data2.forEach((item) => {
+                document.writeln(`
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">${item.title}</h4>
+            <span>${item.date}</span>
+            <p class="timeline-text">${item.text}</p>
+          </li>
+        `);
+              });
+            </script>
+
+          </ol>
+
+        </section>
+
+
+        <section class="timeline" style="margin-top:50px;">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Professional Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <script>
+              const experiences = [
+                {
+                  title: "Catholic High School, Petaling Jaya | Training Teacher",
+                  date: "March 2023 - May 2023",
+                  description: "Utilize a variety of teaching methods including interactive lectures, group discussions, and hands-on activities. Gain experience in managing a classroom independently and foster an inclusive learning environment. Develop communication and interpersonal skills through interactions with students, parents, and colleagues."
+                },
+                {
+                  title: "Heng Ee High School, Penang | Training Teacher",
+                  date: "August 2022 - October 2022",
+                  description: "Plan and deliver comprehensive physics and mathematics lesson plans. Experience in grading homework and exam of students. Use educational technology to enhance the learning experience for students. Conduct action research on effective teaching strategies and implemented findings to improve student learning outcomes."
+                },
+                {
+                  title: "YouTube & Bilibili | Content Creator",
+                  date: "March 2021 – Present",
+                  description: "Develop and create engaging science popularization video content on various topics in physics for two platforms, YouTube and Bilibili. Produce high-quality video content with accurate scientific information and creative visual effects. Gain over 1.4 million total views and 36k subscribers from both platforms combined. Respond to comments and messages and fostering a community of science enthusiasts, leading to a healthy discussion."
+                },
+                {
+                  title: "Life Education Centre | Teacher",
+                  date: "May 2019 - September 2019",
+                  description: "Teach elementary and middle school students in various subject such as Mandarin, Science, Mathematics, and so on. Experience in managing and collecting student fees at the counter, while maintaining good communication with parents."
+                },
+                {
+                  title: "Super Education Centre | Teaching Assistant",
+                  date: "January 2016 - December 2017",
+                  description: "Provide guidance for students to complete their homework in homework class. Maintained regular communication with parents to update and discuss student progress and provide strategies to support their child's learning and growth."
+                }
+              ];
+
+              experiences.forEach((experience) => {
+                document.writeln(`<li class="timeline-item">`);
+                document.writeln(`<h4 class="h4 timeline-item-title">${experience.title}</h4>`);
+                document.writeln(`<span>${experience.date}</span>`);
+                document.writeln(`<p class="timeline-text">${experience.description}</p>`);
+                document.writeln(`</li>`);
+              });
+            </script>
+          </ol>
+        </section>
+
+
+        <section class="skill" style="margin-top:50px;">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <script>
+              const skills = [
+                { name: "Multilingual Communication", value: 80, languages: "(Mandarin, English, Bahasa Melayu, Cantonese, and Japanese)" },
+                { name: "Programming", value: 90, languages: "(HTML, CSS, JavaScript, Python, SQL, PHP, and C++)" },
+                { name: "Educational Technology Development", value: 85, languages: "(3D Simulation, Interactive Educational Application)" },
+                { name: "Animation", value: 85, languages: "(Python, PowerPoint)" },
+                { name: "Video Editing", value: 80, languages: "(CapCut, Filmora)" },
+                { name: "Organization", value: 70, languages: "(Prioritize tasks, Manage resources)" }
+              ];
+
+              skills.forEach(skill => {
+                document.writeln(`
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5">${skill.name}</h5>
+                      <data value="${skill.value}">${skill.languages}</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" style="width: ${skill.value}%;"></div>
+                    </div>
+                  </li>
+                `);
+              });
+            </script>
+          </ul>
+        </section>
+
+
+        <header>
+          <h2 class="h2 article-title" style="margin-top:50px;">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+
+
+
+
+          <ul class="project-list">
+
+            <script>
+              const data = [
+                {
+                  title: "WebGSIM (Final Year Project)",
+                  category: "Education",
+                  url: "https://webgsim.github.io/",
+                  image: "./assets/kcportfolio/Slide1.png",
+                },
+                {
+                  title: "ShEdPhy (Sharing System)",
+                  category: "Education",
+                  url: "http://pentaksiranbilikdarjah.epizy.com/",
+                  image: "./assets/kcportfolio/Slide2.PNG",
+                },
+                {
+                  title: "Blood Management System",
+                  category: "Dynamic Website",
+                  url: "http://bbms2022.epizy.com/",
+                  image: "./assets/kcportfolio/Slide3.PNG",
+                },
+                {
+                  title: "Course Registration System",
+                  category: "Dynamic Website",
+                  url: "upsiregistration.epizy.com",
+                  image: "./assets/kcportfolio/Slide4.PNG",
+                },
+                {
+                  title: "Portfolio Website",
+                  category: "Static Website",
+                  url: "https://weijietan99.github.io/",
+                  image: "./assets/kcportfolio/Slide5.PNG",
+                },
+                {
+                  title: "3D Molecules Simulation",
+                  category: "Education",
+                  url: "https://latentheat.github.io/solid.html",
+                  image: "./assets/kcportfolio/Slide6.PNG",
+                },
+                {
+                  title: "Linear Motion Graph",
+                  category: "Education",
+                  url: "https://latentheat.github.io/motion.html",
+                  image: "./assets/kcportfolio/Slide7.PNG",
+                }
+                ,
+                {
+                  title: "Interactive Quiz",
+                  category: "Education",
+                  url: "https://latentheat.github.io/",
+                  image: "./assets/kcportfolio/Slide8.PNG",
+                }
+                ,
+
+                {
+                  title: "Snake Game (Mathematics)",
+                  category: "Education",
+                  url: "https://scratch.mit.edu/projects/787687887",
+                  image: "./assets/kcportfolio/Slide9.PNG",
+                }
+
+              ];
+
+              data.forEach(item => {
+                document.writeln(`<li class="project-item  active">
+  <a href="${item.url}" target="_blank">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="${item.image}" alt="" loading="lazy">
+    </figure>
+    <h3 class="project-title">${item.title}</h3>
+    <p class="project-category">${item.category}</p>
+  </a>
+</li>`);
+              });
+
+            </script>
+
+
+          </ul>
+
+        </section>
+
+
+
+        <header>
+          <h2 class="h2 article-title" style="margin-top:50px;">Science Popularization Video</h2>
+        </header>
+
+        <section class="projects">
+
+
+
+
+          <ul class="project-list">
+
+            <script>
+              const data4 = [
+                {
+                  title: "<b>能量的本质</b> <br><i>The Nature of Energy</i>",
+                  category: "Energy",
+                  url: "https://youtu.be/OrhxzEB1tPE",
+                  image: "https://i.ytimg.com/vi/OrhxzEB1tPE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDXLAsKCYEe13_LS1ODelMSfu-HAg",
+                },
+                {
+                  title: "<b>光会变慢吗？</b> <br><i>Will Light Slow Down?</i>",
+                  category: "Light & Optics",
+                  url: "https://youtu.be/fQ0X3TH3kjw",
+                  image: "https://i.ytimg.com/vi/fQ0X3TH3kjw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnnJZOS6_331r81b9KtApy1RqebQ",
+                }
+
+                , {
+                  title: "<b>引力的本质</b> <br><i>The Nature of Gravity</i>",
+                  category: "Gravitation",
+                  url: "https://youtu.be/uqT9bIBpkzw",
+                  image: "https://i.ytimg.com/vi/uqT9bIBpkzw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB47TqI8YWRzv1gMyNPmykLAuLmrA",
+                }
+
+                , {
+                  title: "<b>折射的本质</b> <br><i>The Nature of Refraction</i>",
+                  category: "Light & Optics",
+                  url: "https://youtu.be/2o8HvJDka08",
+                  image: "https://i.ytimg.com/vi/2o8HvJDka08/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA0-3SUObMndJmO2r4_9T9vIUxZBA",
+                }
+
+                , {
+                  title: "<b>质量的十层理解</b> <br><i>Ten Level Understanding of Mass</i>",
+                  category: "Mass and Matter",
+                  url: "https://youtu.be/aLqYjRAQylY",
+                  image: "https://i.ytimg.com/vi/aLqYjRAQylY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBHp28xwLIkv3aG8x2D5BkR3rWqzw",
+                }
+
+                , {
+                  title: "<b>弱力等于衰变吗？</b> <br><i>Is Weak Interaction and Decay Equivalent?</i>",
+                  category: "Weak Interaction",
+                  url: "https://youtu.be/Qu2CUuykUVw",
+                  image: "https://i.ytimg.com/vi/Qu2CUuykUVw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAmjEkcxsD_rCBXo0IEMCRy1XzFJQ",
+                }
+
+                , {
+                  title: "<b>CPT对称</b> <br><i>CPT Symmetry</i>",
+                  category: "Weak Interaction",
+                  url: "https://youtu.be/Pe9jz0eayb4",
+                  image: "https://i.ytimg.com/vi/Pe9jz0eayb4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCRwdhZbPPgI5u2fE2r7pNuMBgPKA",
+                }
+                , {
+                  title: "<b>弱力不是力？</b> <br><i>Weak Force is Not a Force?</i>",
+                  category: "Weak Interaction",
+                  url: "https://youtu.be/7X2e16Vs47w",
+                  image: "https://i.ytimg.com/vi/7X2e16Vs47w/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBxZJ6_apoGJi6TzntWJKJiYm4e_A",
+                }
+                , {
+                  title: "<b>规范对称性</b> <br><i>Gauge Invariance</i>",
+                  category: "Weak Interaction",
+                  url: "https://youtu.be/BK6u1dxYzz4",
+                  image: "https://i.ytimg.com/vi/BK6u1dxYzz4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCxNLYiSzc-CCGQUkNigkTAat4JUg",
+                }
+                , {
+                  title: "<b>希格斯机制</b> <br><i>Higgs Mechanism</i>",
+                  category: "Weak Interaction",
+                  url: "https://youtu.be/2pMV2hLQdrs",
+                  image: "https://i.ytimg.com/vi/2pMV2hLQdrs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnSaCBuMUbXn45fMLGAoimweDTNw",
+                }
+
+                , {
+                  title: "<b>四力统一</b> <br><i>Unification of Four Fundamental Forces</i>",
+                  category: "Fundamental Forces",
+                  url: "https://youtu.be/BkNbtDt_jL0",
+                  image: "https://i.ytimg.com/vi/BkNbtDt_jL0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDWq9w-h7aWF829dZfZbvVZoBpN9w",
+                }
+
+                , {
+                  title: "<b>磁力是幻觉吗</b> <br><i></i>",
+                  category: "Electricity & Magnetism",
+                  url: "https://youtu.be/q-1U5ORaIA8",
+                  image: "https://i.ytimg.com/vi/q-1U5ORaIA8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3l_3sDeCEXz_uW5qf41pNntRYaw",
+                }
+
+                , {
+                  title: "<b>电等于磁吗？</b> <br><i>Is Electricity and Magnetism Equivalent?</i>",
+                  category: "Electricity & Magnetism",
+                  url: "https://youtu.be/3xv_-t8NTyo",
+                  image: "https://i.ytimg.com/vi/3xv_-t8NTyo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDOvGxQ5_XSNnD695DtVjg53bbX8w",
+                }
+                , {
+                  title: "<b>被创造的时间</b> <br><i>Is Time Human Creation?</i>",
+                  category: "Time",
+                  url: "https://youtu.be/y0JZ6cDzBzg",
+                  image: "https://i.ytimg.com/vi/y0JZ6cDzBzg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCvBmDI5lrFPnUt0pfsz2qydLyAGg",
+                }
+                , {
+                  title: "<b>被颠覆的时间</b> <br><i>We Don't Understand Time</i>",
+                  category: "Time",
+                  url: "https://youtu.be/Y9w9vvxtYCY",
+                  image: "https://i.ytimg.com/vi/Y9w9vvxtYCY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYlPhhh37m8AYQn8IBu5I5kN7gHw",
+                }
+                , {
+                  title: "<b>宇宙的五个结局</b> <br><i>Five Ending of Universe</i>",
+                  category: "Universe",
+                  url: "https://youtu.be/kQ20zPnZLnc",
+                  image: "https://i.ytimg.com/vi/kQ20zPnZLnc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDgqQIzO-BlOTK38kZm6Rk27TmFgw",
+                }
+
+
+
+
+
+
+              ];
+
+              data4.forEach(item => {
+                document.writeln(`<li class="project-item  active">
+  <a href="${item.url}" target="_blank">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="${item.image}" alt="" loading="lazy">
+    </figure>
+    <h3 class="project-title">${item.title}</h3>
+    <p class="project-category">${item.category}</p>
+  </a>
+</li>`);
+              });
+
+            </script>
+
+
+          </ul>
+
+        </section>
+
+
+
+
+
+      </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
