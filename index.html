@@ -161,22 +161,27 @@
                   "title": "Sultan Idris Education University, 35900 Tanjong Malim, Perak",
                   "date": "2019-2023",
                   "text": "Obtained 3.95/4.0 CGPA for Bachelor of Education (Physics) with Honours."
+                  , logo: "./assets/images/logo_upsi.png"
                 },
                 {
                   "title": "Melaka Matriculation College, 78300 Masjid Tanah, Melaka",
                   "date": "2018-2019",
                   "text": "Obtained 4.0/4.0 CGPA in Peperiksaan Semester Program Matrikulasi (PSPM)."
+                  , logo: "./assets/images/logo_melaka.jfif"
                 },
                 {
                   "title": "SMJK Nan Hwa, 32000 Sitiawan, Perak",
                   "date": "2013-2017",
                   "text": "Obtained 6A+ 2A 1A- 1B+ in Sijil Pelajaran Malaysia (SPM)."
+                  , logo: "./assets/images/logo_nanhwa.png"
                 }
               ];
 
               data2.forEach((item) => {
                 document.writeln(`
           <li class="timeline-item">
+            <img style="width:30px;margin-bottom:5px;" 
+              src="${item.logo}">
             <h4 class="h4 timeline-item-title">${item.title}</h4>
             <span>${item.date}</span>
             <p class="timeline-text">${item.text}</p>
@@ -204,31 +209,48 @@
                   title: "Catholic High School, Petaling Jaya | Training Teacher",
                   date: "March 2023 - May 2023",
                   description: "Utilize a variety of teaching methods including interactive lectures, group discussions, and hands-on activities. Gain experience in managing a classroom independently and foster an inclusive learning environment. Develop communication and interpersonal skills through interactions with students, parents, and colleagues."
+                  , logo: "./assets/images/logo_catholic.png"
                 },
                 {
                   title: "Heng Ee High School, Penang | Training Teacher",
                   date: "August 2022 - October 2022",
                   description: "Plan and deliver comprehensive physics and mathematics lesson plans. Experience in grading homework and exam of students. Use educational technology to enhance the learning experience for students. Conduct action research on effective teaching strategies and implemented findings to improve student learning outcomes."
+                  , logo: "./assets/images/logo_hengee.jfif"
                 },
                 {
                   title: "YouTube & Bilibili | Content Creator",
                   date: "March 2021 – Present",
                   description: "Develop and create engaging science popularization video content on various topics in physics for two platforms, YouTube and Bilibili. Produce high-quality video content with accurate scientific information and creative visual effects. Gain over 1.4 million total views and 36k subscribers from both platforms combined. Respond to comments and messages and fostering a community of science enthusiasts, leading to a healthy discussion."
+                  , logo: "./assets/images/logo_youtube.png"
+                  , logo2: "./assets/images/logo_bilibili.png"
                 },
                 {
                   title: "Life Education Centre | Teacher",
                   date: "May 2019 - September 2019",
                   description: "Teach elementary and middle school students in various subject such as Mandarin, Science, Mathematics, and so on. Experience in managing and collecting student fees at the counter, while maintaining good communication with parents."
+                  , logo: "./assets/images/logo_lec.png"
                 },
                 {
                   title: "Super Education Centre | Teaching Assistant",
                   date: "January 2016 - December 2017",
                   description: "Provide guidance for students to complete their homework in homework class. Maintained regular communication with parents to update and discuss student progress and provide strategies to support their child's learning and growth."
+                  , logo: "./assets/images/logo_super.png"
                 }
               ];
 
               experiences.forEach((experience) => {
+
                 document.writeln(`<li class="timeline-item">`);
+
+                if (experience.title === "YouTube & Bilibili | Content Creator") {
+                  document.writeln(`<div style="display:flex;"> <img style="width:35px;margin-bottom:5px;padding-right:5px;" 
+              src="${experience.logo}"><img style="width:30px;margin-bottom:5px;" src="${experience.logo2}"></div>`);
+                }
+                else {
+                  document.writeln(` <img style="width:30px;margin-bottom:5px;" 
+              src="${experience.logo}">`);
+                }
+
                 document.writeln(`<h4 class="h4 timeline-item-title">${experience.title}</h4>`);
                 document.writeln(`<span>${experience.date}</span>`);
                 document.writeln(`<p class="timeline-text">${experience.description}</p>`);
